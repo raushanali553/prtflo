@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raushan Ali Ansari - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 350px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+                max-height: 400px;
+            }
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-[#003f5c]">Raushan Ali Ansari</h1>
+            <p class="text-xl md:text-2xl text-[#7a5195] mt-2">A Rising Tech Professional</p>
+        </header>
+
+        <!-- <img src="https://drive.google.com/file/d/1Gi1fA8gl5VACqeNjN1t5MIZqe8FeYmuV/view?usp=drivesdk" alt="img" style="width: 300px; height: 200px; margin-left: 450px; margin-bottom: 40px"> -->
+
+        <main class="space-y-12">
+
+            <section id="profile" class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                <div class="md:col-span-2 bg-white rounded-lg shadow-lg p-6">
+                    <h2 class="text-2xl font-bold text-[#003f5c] mb-4 border-b-2 border-[#ffa600] pb-2">Summary</h2>
+                    <p class="text-base leading-relaxed">
+                
+                
+                              A recent Bachelor of Computer Applications graduate specializing in Data Structures and Algorithms. With a strong foundational knowledge of various programming languages and web technologies, I am eager to apply my technical skills in software development, web design, and database management to contribute effectively to a reputable organization. I am a dedicated and quick learner with a true passion for technology and problem-solving.
+                    </p>
+                </div>
+                <div class="bg-[#003f5c] text-white rounded-lg shadow-lg p-6 text-center flex flex-col justify-center h-full">
+                    <h3 class="text-xl font-bold text-[#ffa600]">BCA Final CGPA</h3>
+                    <p class="text-6xl font-bold my-2">8.04</p>
+                    <p class="text-base text-gray-300">A strong academic foundation</p>
+                </div>
+            </section>
+            
+            <section id="education">
+                 <h2 class="text-3xl font-bold text-center text-[#003f5c] mb-8">Academic Journey</h2>
+                 <div class="relative wrap overflow-hidden p-10 h-full">
+                     <div class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border" style="left: 50%"></div>
+                     
+                     <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                         <div class="order-1 w-5/12"></div>
+                         <div class="z-20 flex items-center order-1 bg-[#7a5195] shadow-xl w-8 h-8 rounded-full">
+                             <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
+                         </div>
+                         <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                             <h3 class="font-bold text-gray-800 text-xl">Bachelor of Computer Applications</h3>
+                             <p class="text-sm leading-snug tracking-wide text-gray-600">School of Management Sciences</p>
+                             <p class="text-sm font-semibold text-[#7a5195]">SGPA: 8.04</p>
+                         </div>
+                     </div>
+
+                     <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                         <div class="order-1 w-5/12"></div>
+                         <div class="z-20 flex items-center order-1 bg-[#ef5675] shadow-xl w-8 h-8 rounded-full">
+                             <h1 class="mx-auto text-white font-semibold text-lg">2</h1>
+                         </div>
+                         <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                             <h3 class="font-bold text-gray-800 text-xl">Intermediate (12th Grade)</h3>
+                             <p class="text-sm leading-snug tracking-wide text-gray-600">Bihar School Examination Board (2021)</p>
+                             <p class="text-sm font-semibold text-[#ef5675]">Result: First Division (63.25%)</p>
+                         </div>
+                     </div>
+                     
+                     <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                         <div class="order-1 w-5/12"></div>
+                         <div class="z-20 flex items-center order-1 bg-[#ffa600] shadow-xl w-8 h-8 rounded-full">
+                             <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
+                         </div>
+                         <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                             <h3 class="font-bold text-gray-800 text-xl">Matriculation (10th Grade)</h3>
+                             <p class="text-sm leading-snug tracking-wide text-gray-600">Bihar School Examination Board (2019)</p>
+                              <p class="text-sm font-semibold text-[#ffa600]">Result: 57.34%</p>
+                         </div>
+                     </div>
+                 </div>
+            </section>
+
+
+            <section id="skills">
+                <h2 class="text-3xl font-bold text-center text-[#003f5c] mb-8">Technical Skillset</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-xl font-bold text-center text-[#003f5c] mb-4">Core Competencies</h3>
+                        <p class="text-center text-sm mb-4">A balanced understanding across foundational areas of computer science.</p>
+                        <div class="chart-container">
+                            <canvas id="skillsRadarChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-xl font-bold text-center text-[#003f5c] mb-4">Programming Language Familiarity</h3>
+                         <p class="text-center text-sm mb-4">Experience with a range of essential programming languages.</p>
+                        <div class="chart-container">
+                            <canvas id="skillsBarChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="workshops">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h2 class="text-2xl font-bold text-[#003f5c] mb-4 border-b-2 border-[#ffa600] pb-2">Continuous Learning & Development</h2>
+                    <p class="text-base mb-6">Actively participated in various workshops and seminars to stay updated with industry trends and enhance practical skills.</p>
+                    <ul class="list-none space-y-3">
+                        <li class="flex items-center"><span class="text-[#003f5c] text-2xl mr-3">&#10003;</span>Certificate: 'Knitting Websites through Advanced Web Technologies'</li>
+                        <li class="flex items-center"><span class="text-[#003f5c] text-2xl mr-3">&#10003;</span>Workshop on 'Web Development'</li>
+                        <li class="flex items-center"><span class="text-[#003f5c] text-2xl mr-3">&#10003;</span>Workshop on 'Python'</li>
+                        <li class="flex items-center"><span class="text-[#003f5c] text-2xl mr-3">&#10003;</span>Workshop on 'Data Analytics'</li>
+                        <li class="flex items-center"><span class="text-[#003f5c] text-2xl mr-3">&#10003;</span>Seminar on 'Personality Development'</li>
+                    </ul>
+                </div>
+            </section>
+
+            ---
+            
+            <section id="resume" class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-bold text-[#003f5c] mb-4 border-b-2 border-[#ffa600] pb-2">Resume</h2>
+                <p class="text-base mb-4">You can download my full resume for a detailed overview of my qualifications and experience.</p>
+                <div class="text-center">
+                    <a href="https://drive.google.com/file/d/1G5fMyPHyObJ2ULwC17GCtkKYn4kXPEW7/view?usp=drivesdk" target="_blank" class="inline-block bg-[#ef5675] text-white font-bold py-3 px-6 rounded-lg hover:bg-[#d04562] transition duration-300">
+                        Download My Resume (PDF)
+                    </a>
+                </div>
+            </section>
+
+            ---
+
+            <section id="projects" class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-bold text-[#003f5c] mb-4 border-b-2 border-[#ffa600] pb-2">My Projects</h2>
+                <p class="text-base mb-6">Here are some of the projects I've worked on. Feel free to explore them!</p>
+                
+                <div class="space-y-6">
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <h3 class="text-xl font-bold text-[#7a5195] mb-2">knowledge-system</h3>
+                        <p class="text-base text-gray-700 mb-3">
+                            It is a knowledge sharing system in this admin faculty and student uploads, see, share notes, education material technologies used (e.g., Python, Django, PostgreSQL), and key features.
+                        </p>
+                        <div class="flex flex-wrap gap-3">
+                            <a href="https://github.com/raushanali553/knowledge-system" target="_blank" class="inline-flex items-center px-4 py-2 bg-[#ffa600] text-white rounded-md hover:bg-[#d48c00] transition duration-300 text-sm">
+                                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zM6.92 6.92a1 1 0 011.414 0L10 8.586l1.666-1.666a1 1 0 111.414 1.414L11.414 10l1.666 1.666a1 1 0 01-1.414 1.414L10 11.414l-1.666 1.666a1 1 0 01-1.414-1.414L8.586 10 6.92 8.334a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                View Code (GitHub)
+                            </a>
+                            <!-- <a href="https://example.com/project-one-live" target="_blank" class="inline-flex items-center px-4 py-2 bg-[#003f5c] text-white rounded-md hover:bg-[#002f4a] transition duration-300 text-sm">
+                                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"></path></svg>
+                                Live Demo
+                            </a> -->
+                            <a href="KSS.zip" download class="inline-flex items-center px-4 py-2 bg-gray-500 text-white rounded-md hover:bg-gray-600 transition duration-300 text-sm">
+                                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                                Download Project
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- <div class="border border-gray-200 rounded-lg p-4">
+                        <h3 class="text-xl font-bold text-[#7a5195] mb-2">Project Title Two</h3>
+                        <p class="text-base text-gray-700 mb-3">
+                            A brief description of Project Title Two, outlining its functionality, technologies used (e.g., HTML, CSS, JavaScript), and challenges overcome.
+                        </p>
+                        <div class="flex flex-wrap gap-3">
+                            <a href="https://github.com/yourusername/project-two" target="_blank" class="inline-flex items-center px-4 py-2 bg-[#ffa600] text-white rounded-md hover:bg-[#d48c00] transition duration-300 text-sm">
+                                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zM6.92 6.92a1 1 0 011.414 0L10 8.586l1.666-1.666a1 1 0 111.414 1.414L11.414 10l1.666 1.666a1 1 0 01-1.414 1.414L10 11.414l-1.666 1.666a1 1 0 01-1.414-1.414L8.586 10 6.92 8.334a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                View Code (GitHub)
+                            </a>
+                             <a href="https://example.com/project-two-live" target="_blank" class="inline-flex items-center px-4 py-2 bg-[#003f5c] text-white rounded-md hover:bg-[#002f4a] transition duration-300 text-sm">
+                                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"></path></svg>
+                                Live Demo
+                            </a>
+                        </div> -->
+                    </div>
+                    </div>
+            </section>
+
+            <footer class="text-center pt-8 border-t border-gray-300">
+                <h2 class="text-2xl font-bold text-[#003f5c]">Get in Touch</h2>
+                <p class="mt-2">Barauli, Gopalganj, Bihar, 841405</p>
+                <p class="mt-1"><strong>Phone:</strong> +91-7070858454</p>
+                <p class="mt-1"><strong>Email:</strong> ansariraushanali65@gmail.com</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        const tooltipTitleCallback = {
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                                return label.join(' ');
+                            } else {
+                                return label;
+                            }
+                        }
+                    }
+                }
+            }
+        };
+
+        const wrapLabel = (label) => {
+            const maxLength = 16;
+            if (label.length <= maxLength) return label;
+            
+            const words = label.split(' ');
+            let lines = [];
+            let currentLine = '';
+
+            words.forEach(word => {
+                if ((currentLine + ' ' + word).trim().length > maxLength) {
+                    lines.push(currentLine.trim());
+                    currentLine = word;
+                } else {
+                    currentLine = (currentLine + ' ' + word).trim();
+                }
+            });
+            lines.push(currentLine.trim());
+            return lines;
+        }
+
+        const radarCtx = document.getElementById('skillsRadarChart').getContext('2d');
+        const radarLabels = [
+            'Data Structures & Algorithm', 
+            'Web Development', 
+            'Problem Solving', 
+            'Database Management', 
+            'C/C++ Programming'
+        ].map(wrapLabel);
+        
+        new Chart(radarCtx, {
+            type: 'radar',
+            data: {
+                labels: radarLabels,
+                datasets: [{
+                    label: 'Proficiency Level',
+                    data: [8, 7, 7, 6, 9],
+                    backgroundColor: 'rgba(239, 86, 117, 0.2)',
+                    borderColor: '#ef5675',
+                    pointBackgroundColor: '#ef5675',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: '#ef5675'
+                }]
+            },
+            options: {
+                ...tooltipTitleCallback,
+                maintainAspectRatio: false,
+                scales: {
+                    r: {
+                        angleLines: { color: 'rgba(0, 63, 92, 0.2)' },
+                        grid: { color: 'rgba(0, 63, 92, 0.2)' },
+                        pointLabels: { 
+                            font: { size: 12 },
+                            color: '#003f5c'
+                        },
+                        ticks: {
+                            backdropColor: 'transparent',
+                            color: '#7a5195',
+                            stepSize: 2
+                        },
+                        suggestedMin: 0,
+                        suggestedMax: 10
+                    }
+                }
+            }
+        });
+
+        const barCtx = document.getElementById('skillsBarChart').getContext('2d');
+        new Chart(barCtx, {
+            type: 'bar',
+            data: {
+                labels: ['C++', 'C', 'HTML/CSS', 'Python', 'Java', 'JavaScript'],
+                datasets: [{
+                    label: 'Familiarity',
+                    data: [9, 8, 8, 6, 5, 5],
+                    backgroundColor: ['#003f5c', '#374c80', '#7a5195', '#bc5090', '#ef5675', '#ff764a'],
+                    borderColor: '#fff',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                ...tooltipTitleCallback,
+                indexAxis: 'y',
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                         grid: { display: false }
+                    },
+                    y: {
+                        grid: { display: false }
+                
+    }
+                },
+                 plugins: {
+                    ...tooltipTitleCallback.plugins,
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
